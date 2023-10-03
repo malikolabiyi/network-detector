@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Detector</title>
+
+    <link href="./css/normalise.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="loading-page">
+        <div style="text-align: center;">
+            <svg width="80" height="40" id="loading-page-network-detector-icon" viewBox="0 0 222 150" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M155.324 148.306C133.736 148.312 112.614 148.312 90.9026 148.312C90.9026 122.095 90.9026 95.449 90.9026 68.8034C90.5651 68.7164 90.2276 68.6294 89.8901 68.5424C83.7014 78.6828 77.4983 88.8145 71.3273 98.9657C61.9008 114.472 52.54 130.018 43.0129 145.463C42.0935 146.953 40.2214 148.826 38.7561 148.857C26.131 149.125 13.4977 149.011 0.516602 149.011C0.516602 99.6955 0.516602 50.8009 0.516602 1.4636C13.6269 1.4636 26.83 1.4636 40.6412 1.4636C40.6412 26.5785 40.6412 51.7666 40.6412 76.9547C41.1247 77.1945 41.6083 77.4344 42.0918 77.6742C43.3201 76.2105 44.7453 74.8697 45.747 73.2646C60.0235 50.391 74.2921 27.512 88.4071 4.53869C90.0028 1.94158 91.6285 0.881577 94.7031 0.927605C106.661 1.10663 118.623 1.00054 131.091 1.00054C131.091 38.3746 131.091 75.2514 131.091 112.7C142.371 112.784 153.178 113.29 163.521 109.514C170.032 107.136 173.781 101.636 176.507 95.6339C182.367 82.7303 182.443 69.4234 177.771 56.2284C174.111 45.8899 166.262 39.6637 155.802 36.9184C152.558 36.0669 151.726 34.6085 151.794 31.4187C152.006 21.451 151.872 11.4758 151.872 0.897705C168.29 1.83476 183.386 5.22113 195.938 16.0806C215.72 33.1949 221.788 55.691 220.926 80.7666C220.503 93.0673 217.821 104.976 211.909 115.783C199.844 137.839 180.699 148.164 155.324 148.306Z"
+                    fill="#ffffff" />
+            </svg>
+            <h1>Network Detector</h1>
+        </div>
+    </div>
+
+    <div id="homepage" style="display: none;">
+        <div>
+            <div id="homepage-content">
+                <header>
+                    <div>
+                        <svg width="80" height="40" viewBox="0 0 222 150" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M155.324 148.306C133.736 148.312 112.614 148.312 90.9026 148.312C90.9026 122.095 90.9026 95.449 90.9026 68.8034C90.5651 68.7164 90.2276 68.6294 89.8901 68.5424C83.7014 78.6828 77.4983 88.8145 71.3273 98.9657C61.9008 114.472 52.54 130.018 43.0129 145.463C42.0935 146.953 40.2214 148.826 38.7561 148.857C26.131 149.125 13.4977 149.011 0.516602 149.011C0.516602 99.6955 0.516602 50.8009 0.516602 1.4636C13.6269 1.4636 26.83 1.4636 40.6412 1.4636C40.6412 26.5785 40.6412 51.7666 40.6412 76.9547C41.1247 77.1945 41.6083 77.4344 42.0918 77.6742C43.3201 76.2105 44.7453 74.8697 45.747 73.2646C60.0235 50.391 74.2921 27.512 88.4071 4.53869C90.0028 1.94158 91.6285 0.881577 94.7031 0.927605C106.661 1.10663 118.623 1.00054 131.091 1.00054C131.091 38.3746 131.091 75.2514 131.091 112.7C142.371 112.784 153.178 113.29 163.521 109.514C170.032 107.136 173.781 101.636 176.507 95.6339C182.367 82.7303 182.443 69.4234 177.771 56.2284C174.111 45.8899 166.262 39.6637 155.802 36.9184C152.558 36.0669 151.726 34.6085 151.794 31.4187C152.006 21.451 151.872 11.4758 151.872 0.897705C168.29 1.83476 183.386 5.22113 195.938 16.0806C215.72 33.1949 221.788 55.691 220.926 80.7666C220.503 93.0673 217.821 104.976 211.909 115.783C199.844 137.839 180.699 148.164 155.324 148.306Z"
+                                fill="#022774" />
+                        </svg>
+                        <h2>Network Detector</h2>
+                    </div>
+                </header>
+
+                <main>
+                    <p>Input the phone number to get the network provider</p>
+
+                    <form id="detect-form">
+                        <div id="phone-number-digits-container">
+                            <input type="text" maxlength="1" id="first-digit-input" placeholder="0" />
+                            <input type="text" maxlength="1" id="second-digit-input" placeholder="0" />
+                            <input type="text" maxlength="1" id="third-digit-input" placeholder="0" />
+                            <input type="text" maxlength="1" id="fourth-digit-input" placeholder="0" />
+                            <input type="text" maxlength="1" id="fifth-digit-input" placeholder="0" />
+                            <input type="text" maxlength="1" id="sixth-digit-input" placeholder="0" />
+                            <input type="text" maxlength="1" id="seventh-digit-input" placeholder="0" />
+                            <input type="text" maxlength="1" id="eighth-digit-input" placeholder="0" />
+                            <input type="text" maxlength="1" id="ninth-digit-input" placeholder="0" />
+                            <input type="text" maxlength="1" id="tenth-digit-input" placeholder="0" />
+                            <input type="text" maxlength="1" id="eleventh-digit-input" placeholder="0" />
+                        </div>
+
+                        <button type="submit" id="detect-btn">Detect</button>
+                    </form>
+
+                    <div id="result-container" style="display: none;">
+                        <p id="result-text"></p>
+                        <img id="result-img" style="border-radius: 20px;" width="50" height="50" />
+
+                        <div class="text-align: center; margin-top: 1rem;" id="refresh-container">
+                            <svg width="40" height="30" viewBox="0 0 55 54" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M27.4947 0.336C42.2067 0.336 54.1534 12.2827 54.1534 26.9947C54.1534 41.7093 42.2067 53.656 27.4947 53.656C12.78 53.656 0.833374 41.7093 0.833374 26.9947C0.833374 12.2827 12.78 0.336 27.4947 0.336ZM15.5054 16.4107L15.5 14.2107C15.5 13.1067 14.604 12.2107 13.5 12.2107C12.396 12.2107 11.5 13.1067 11.5 14.2107V22.3387C11.5 23.4427 12.396 24.3387 13.5 24.3387H21.5587C22.6627 24.3387 23.5587 23.4427 23.5587 22.3387C23.5587 21.2347 22.6627 20.3227 21.5587 20.3227H17.5267C19.6814 17.1093 23.3454 14.9947 27.5 14.9947C34.1214 14.9947 39.5 20.3707 39.5 26.9947C39.5 33.616 34.1214 38.9947 27.5 38.9947C22.284 38.9947 17.8387 35.6587 16.188 31.0027C15.9054 30.2053 15.1507 29.672 14.3027 29.672C12.9214 29.672 11.956 31.04 12.4174 32.3413C14.6174 38.5467 20.5454 42.9947 27.5 42.9947C36.332 42.9947 43.5 35.824 43.5 26.9947C43.5 18.1627 36.332 10.9947 27.5 10.9947C22.7267 10.9947 18.436 13.0907 15.5054 16.4107Z"
+                                    fill="#022774" />
+                            </svg>
+
+                            <p>Refresh</p>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <footer>
+                <div>
+                    <p>By Group Alpha <br /> 2021/2022 Set, <br /> Department Of Computer Science, <br /> Lagos State
+                        Univeristy, Ojo <br /> Lagos, Nigeria</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./js/app.js" />
+</body>
+
+</html>

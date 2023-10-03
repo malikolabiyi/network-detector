@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;900&display=swap');
+
+html {
+    font-size: 15px;
+
+    --black-colour: #0E0D0D;
+    --blue-colour: #022774;
+    --grey-colour: #efefef;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    color: var(--black-colour);
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    line-height: 2rem;
+    margin: 0.5rem 0;
+}
+
+#homepage-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+}
+
+#phone-number-digits-container {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input {
+    display: block;
+    width: 20px;
+    height: 30px;
+    background-color: var(--grey-colour);
+    border: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 0.2rem;
+    font-weight: 500;
+}
+
+button {
+    display: inline-block;
+    background-color: var(--blue-colour);
+    color: white;
+    font-family: inherit;
+    padding: 0.8rem 2rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+}
+
+#loading-page {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("/images/background.png");
+}
+
+#loading-page-network-detector-icon {
+    animation: 5s infinite rotate;
+}
+
+#homepage-content h2 {
+    font-weight: 900;
+}
+
+#homepage-content p {
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: var(--blue-colour);
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+@keyframes rotate {
+from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1280px) {
+}
