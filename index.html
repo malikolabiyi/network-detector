@@ -43,17 +43,17 @@
 
                     <form id="detect-form">
                         <div id="phone-number-digits-container">
-                            <input type="text" maxlength="1" id="first-digit-input" placeholder="0" />
-                            <input type="text" maxlength="1" id="second-digit-input" placeholder="0" />
-                            <input type="text" maxlength="1" id="third-digit-input" placeholder="0" />
-                            <input type="text" maxlength="1" id="fourth-digit-input" placeholder="0" />
-                            <input type="text" maxlength="1" id="fifth-digit-input" placeholder="0" />
-                            <input type="text" maxlength="1" id="sixth-digit-input" placeholder="0" />
-                            <input type="text" maxlength="1" id="seventh-digit-input" placeholder="0" />
-                            <input type="text" maxlength="1" id="eighth-digit-input" placeholder="0" />
-                            <input type="text" maxlength="1" id="ninth-digit-input" placeholder="0" />
-                            <input type="text" maxlength="1" id="tenth-digit-input" placeholder="0" />
-                            <input type="text" maxlength="1" id="eleventh-digit-input" placeholder="0" />
+                            <input type="text" maxlength="1" id="first-digit-input" placeholder="0" required />
+                            <input type="text" maxlength="1" id="second-digit-input" placeholder="0" required />
+                            <input type="text" maxlength="1" id="third-digit-input" placeholder="0" required />
+                            <input type="text" maxlength="1" id="fourth-digit-input" placeholder="0" required />
+                            <input type="text" maxlength="1" id="fifth-digit-input" placeholder="0" required />
+                            <input type="text" maxlength="1" id="sixth-digit-input" placeholder="0" required />
+                            <input type="text" maxlength="1" id="seventh-digit-input" placeholder="0" required />
+                            <input type="text" maxlength="1" id="eighth-digit-input" placeholder="0" required />
+                            <input type="text" maxlength="1" id="ninth-digit-input" placeholder="0" required />
+                            <input type="text" maxlength="1" id="tenth-digit-input" placeholder="0" required />
+                            <input type="text" maxlength="1" id="eleventh-digit-input" placeholder="0" required />
                         </div>
 
                         <button type="submit" id="detect-btn">Detect</button>
@@ -63,7 +63,7 @@
                         <p id="result-text"></p>
                         <img id="result-img" style="border-radius: 20px;" width="50" height="50" />
 
-                        <div class="text-align: center; margin-top: 1rem;" id="refresh-container">
+                        <div style="text-align: center; margin-top: 1rem;" id="refresh-container">
                             <svg width="40" height="30" viewBox="0 0 55 54" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -71,7 +71,7 @@
                                     fill="#022774" />
                             </svg>
 
-                            <p>Refresh</p>
+                            <p style="margin: 0.1rem 0; font-size: 0.9rem;">Refresh</p>
                         </div>
                     </div>
                 </main>
