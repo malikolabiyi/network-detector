@@ -34,6 +34,9 @@ form.onsubmit = (event) => {
 
     if (phoneNumber.slice(0, 4) === "0810") {
         resultText.textContent = "The network provider is MTN";
+        resultText.style.color = "#0E0D0D";
+
+        resultImg.style.display = "inline-block";
         resultImg.src = "/images/mtn-logo.jpg";
     } else {
         resultText.textContent = "The network provider is unknown";
