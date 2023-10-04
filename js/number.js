@@ -14,7 +14,7 @@ export class PhoneNumber extends Number {
 
         if (prefixes[phoneNumberPrefix]) {
             return prefixes[phoneNumberPrefix];
-        } else if (phoneNumber.slice(0, 5) === "07025" || phoneNumber.slice(0, 5) === "07026") { // Tests for 5 prefixes
+        } else if (this.digits.slice(0, 5) === "07025" || this.digits.slice(0, 5) === "07026") { // Tests for 5 prefixes
             return "MTN";
         } else {
             return "";
