@@ -1,10 +1,12 @@
+import { PhoneNumber } from "/js/number.js";
+
 const loadingPage = document.getElementById("loading-page");
 const homepage = document.getElementById("homepage");
 
 setTimeout(() => {
     loadingPage.style.display = "none";
     homepage.style.display = "block";
-}, 5000);
+}, 3000);
 
 const form = document.getElementById("detect-form");
 const detectBtn = document.getElementById("detect-btn");
@@ -30,14 +32,18 @@ form.onsubmit = (event) => {
     const tenthDigit = document.getElementById("tenth-digit-input").value;
     const eleventhDigit = document.getElementById("eleventh-digit-input").value;
 
-    const phoneNumber = `${firstDigit}${secondDigit}${thirdDigit}${fourthDigit}${fifthDigit}${sixthDigit}${seventhDigit}${eighthDigit}${ninthDigit}${tenthDigit}${eleventhDigit}`;
+    const digits = `${firstDigit}${secondDigit}${thirdDigit}${fourthDigit}${fifthDigit}${sixthDigit}${seventhDigit}${eighthDigit}${ninthDigit}${tenthDigit}${eleventhDigit}`;
 
-    if (phoneNumber.slice(0, 4) === "0810") {
-        resultText.textContent = "The network provider is MTN";
+    const phoneNumber = new PhoneNumber(digits);
+
+    const result = phoneNumber.getNetworkProvider();
+
+    if (result) {
+        resultText.textContent = `The network provider is ${result}`;
         resultText.style.color = "#0E0D0D";
 
         resultImg.style.display = "inline-block";
-        resultImg.src = "/images/mtn-logo.jpg";
+        resultImg.src = `/images/${result.toLowerCase()}-logo.jpg`;
     } else {
         resultText.textContent = "The network provider is unknown";
         resultText.style.color = "#ff0000";
@@ -66,3 +72,64 @@ refreshContainer.onclick = () => {
     detectBtn.style.display = "inline-block";
     resultContainer.style.display = "none";
 }
+
+
+document.getElementById("first-digit-input").oninput = (event) => {
+    if (event.target.value) {
+        document.getElementById("second-digit-input").focus();
+    }
+};
+
+document.getElementById("second-digit-input").oninput = (event) => {
+    if (event.target.value) {
+        document.getElementById("third-digit-input").focus();
+    }
+};
+
+document.getElementById("third-digit-input").oninput = (event) => {
+    if (event.target.value) {
+        document.getElementById("fourth-digit-input").focus();
+    }
+};
+
+document.getElementById("fourth-digit-input").oninput = (event) => {
+    if (event.target.value) {
+        document.getElementById("fifth-digit-input").focus();
+    }
+};
+
+document.getElementById("fifth-digit-input").oninput = (event) => {
+    if (event.target.value) {
+        document.getElementById("sixth-digit-input").focus();
+    }
+};
+
+document.getElementById("sixth-digit-input").oninput = (event) => {
+    if (event.target.value) {
+        document.getElementById("seventh-digit-input").focus();
+    }
+};
+
+document.getElementById("seventh-digit-input").oninput = (event) => {
+    if (event.target.value) {
+        document.getElementById("eighth-digit-input").focus();
+    }
+};
+
+document.getElementById("eighth-digit-input").oninput = (event) => {
+    if (event.target.value) {
+        document.getElementById("ninth-digit-input").focus();
+    }
+};
+
+document.getElementById("ninth-digit-input").oninput = (event) => {
+    if (event.target.value) {
+        document.getElementById("tenth-digit-input").focus();
+    }
+};
+
+document.getElementById("tenth-digit-input").oninput = (event) => {
+    if (event.target.value) {
+        document.getElementById("eleventh-digit-input").focus();
+    }
+};
