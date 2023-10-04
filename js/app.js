@@ -43,7 +43,12 @@ form.onsubmit = (event) => {
         resultText.style.color = "#0E0D0D";
 
         resultImg.style.display = "inline-block";
-        resultImg.src = `/images/${result.toLowerCase()}-logo.jpg`;
+
+        if (result === "9MOBILE") {
+            resultImg.src = `/images/nine-mobile-logo.jpg`;
+        } else {
+            resultImg.src = `/images/${result.toLowerCase()}-logo.jpg`;
+        }
     } else {
         resultText.textContent = "The network provider is unknown";
         resultText.style.color = "#ff0000";
