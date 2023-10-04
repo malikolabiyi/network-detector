@@ -17,7 +17,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 }
 
 h1 {
@@ -90,7 +90,7 @@ input {
     font-size: 1.2rem;
     text-align: center;
     border-radius: 10px;
-    margin: 0 0.2rem;
+    margin: 0 0.2rem 0.5rem 0.2rem;
     font-weight: 500;
 }
 
@@ -168,6 +168,10 @@ input[type=number] {
 @media (min-width: 768px) {
     html {
         font-size: 16px;
+    }
+
+    input {
+        margin: 0 0.2rem;
     }
 }
 
