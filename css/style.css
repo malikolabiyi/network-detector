@@ -5,6 +5,7 @@ html {
 
     --black-colour: #0E0D0D;
     --blue-colour: #022774;
+    --sky-blue-colour: #0056C2;
     --grey-colour: #efefef;
 }
 
@@ -46,6 +47,16 @@ h4 {
 p {
     line-height: 2rem;
     margin: 0.5rem 0;
+}
+
+#homepage {
+    animation: 1s slide-up;
+}
+
+@keyframes slide-up {
+  to {
+    transform: translateY(-20px);
+  }
 }
 
 #homepage-content {
@@ -92,6 +103,13 @@ button {
     font-weight: 500;
     border: none;
     border-radius: 10px;
+    box-shadow: 4px 4px 2px 2px var(--grey-colour);
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(2px);
+    background-color: var(--sky-blue-colour);
 }
 
 #loading-page {
@@ -105,7 +123,7 @@ button {
 }
 
 #loading-page-network-detector-icon {
-    animation: 5s infinite rotate;
+    animation: 3s infinite rotate;
 }
 
 #homepage-content h2 {
