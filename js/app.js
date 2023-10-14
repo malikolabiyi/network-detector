@@ -78,63 +78,165 @@ refreshContainer.onclick = () => {
     resultContainer.style.display = "none";
 }
 
-
+// First Input Box
 document.getElementById("first-digit-input").oninput = (event) => {
     if (event.target.value) {
+        document.getElementById("first-digit-input").value = event.target.value.slice(-1);
+
         document.getElementById("second-digit-input").focus();
     }
 };
 
+// Second Input Box
+document.getElementById("second-digit-input").onkeydown = (event) => {
+    if(event.key === "Backspace") {
+        document.getElementById("first-digit-input").focus();
+    }
+}
+
 document.getElementById("second-digit-input").oninput = (event) => {
     if (event.target.value) {
+        document.getElementById("second-digit-input").value = event.target.value.slice(-1);
+
         document.getElementById("third-digit-input").focus();
     }
 };
 
+// Third Input Box
+document.getElementById("third-digit-input").onkeydown = (event) => {
+    if(event.key === "Backspace") {
+        document.getElementById("second-digit-input").focus();
+    }
+}
+
 document.getElementById("third-digit-input").oninput = (event) => {
     if (event.target.value) {
+        document.getElementById("third-digit-input").value = event.target.value.slice(-1);
+
         document.getElementById("fourth-digit-input").focus();
     }
 };
 
+// Fourth Input Box
+document.getElementById("fourth-digit-input").onkeydown = (event) => {
+    if(event.key === "Backspace") {
+        document.getElementById("third-digit-input").focus();
+    }
+}
+
 document.getElementById("fourth-digit-input").oninput = (event) => {
     if (event.target.value) {
+        document.getElementById("fourth-digit-input").value = event.target.value.slice(-1);
+
         document.getElementById("fifth-digit-input").focus();
     }
 };
 
+// Fifth Input Box
+document.getElementById("fifth-digit-input").onkeydown = (event) => {
+    if(event.key === "Backspace") {
+        document.getElementById("fourth-digit-input").focus();
+    }
+}
+
 document.getElementById("fifth-digit-input").oninput = (event) => {
     if (event.target.value) {
+        document.getElementById("fifth-digit-input").value = event.target.value.slice(-1);
+
         document.getElementById("sixth-digit-input").focus();
     }
 };
 
+// Sixth Input Box
+document.getElementById("sixth-digit-input").onkeydown = (event) => {
+    if(event.key === "Backspace") {
+        document.getElementById("fifth-digit-input").focus();
+    }
+}
+
 document.getElementById("sixth-digit-input").oninput = (event) => {
     if (event.target.value) {
+        document.getElementById("sixth-digit-input").value = event.target.value.slice(-1);
+
         document.getElementById("seventh-digit-input").focus();
     }
 };
 
+// Seventh Input Box
+document.getElementById("seventh-digit-input").onkeydown = (event) => {
+    if(event.key === "Backspace") {
+        document.getElementById("sixth-digit-input").focus();
+    }
+}
+
 document.getElementById("seventh-digit-input").oninput = (event) => {
     if (event.target.value) {
+        document.getElementById("seventh-digit-input").value = event.target.value.slice(-1);
+
         document.getElementById("eighth-digit-input").focus();
     }
 };
 
+// Eighth Input Box
+document.getElementById("eighth-digit-input").onkeydown = (event) => {
+    if(event.key === "Backspace") {
+        document.getElementById("seventh-digit-input").focus();
+    }
+}
+
 document.getElementById("eighth-digit-input").oninput = (event) => {
     if (event.target.value) {
+        document.getElementById("eighth-digit-input").value = event.target.value.slice(-1);
+
         document.getElementById("ninth-digit-input").focus();
     }
 };
 
+// Ninth Input Box
+document.getElementById("ninth-digit-input").onkeydown = (event) => {
+    if(event.key === "Backspace") {
+        document.getElementById("eighth-digit-input").focus();
+    }
+}
+
 document.getElementById("ninth-digit-input").oninput = (event) => {
     if (event.target.value) {
+        document.getElementById("ninth-digit-input").value = event.target.value.slice(-1);
+
         document.getElementById("tenth-digit-input").focus();
     }
 };
 
+// Tenth Input Box
+document.getElementById("tenth-digit-input").onkeydown = (event) => {
+    if(event.key === "Backspace") {
+        document.getElementById("ninth-digit-input").focus();
+    }
+}
+
 document.getElementById("tenth-digit-input").oninput = (event) => {
     if (event.target.value) {
+        document.getElementById("tenth-digit-input").value = event.target.value.slice(-1);
+
         document.getElementById("eleventh-digit-input").focus();
+    }
+};
+
+// Eleventh Input Box
+document.getElementById("eleventh-digit-input").onkeydown = (event) => {
+    if(event.key === "Backspace") {
+        const value = document.getElementById("eleventh-digit-input").value;
+
+        if(!value) {
+            document.getElementById("tenth-digit-input").focus();
+        } else {
+            document.getElementById("eleventh-digit-input").value = ""
+        }
+    }
+}
+
+document.getElementById("eleventh-digit-input").oninput = (event) => {
+    if (event.target.value) {
+        document.getElementById("eleventh-digit-input").value = event.target.value.slice(-1);
     }
 };
