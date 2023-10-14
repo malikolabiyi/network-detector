@@ -90,7 +90,13 @@ document.getElementById("first-digit-input").oninput = (event) => {
 // Second Input Box
 document.getElementById("second-digit-input").onkeydown = (event) => {
     if(event.key === "Backspace") {
-        document.getElementById("first-digit-input").focus();
+        const value = document.getElementById("second-digit-input").value;
+
+        if(!value) {
+            document.getElementById("first-digit-input").focus();
+        } else {
+            document.getElementById("second-digit-input").value = ""
+        }
     }
 }
 
@@ -105,7 +111,13 @@ document.getElementById("second-digit-input").oninput = (event) => {
 // Third Input Box
 document.getElementById("third-digit-input").onkeydown = (event) => {
     if(event.key === "Backspace") {
-        document.getElementById("second-digit-input").focus();
+        const value = document.getElementById("third-digit-input").value;
+
+        if(!value) {
+            document.getElementById("second-digit-input").focus();
+        } else {
+            document.getElementById("third-digit-input").value = ""
+        }
     }
 }
 
@@ -120,7 +132,13 @@ document.getElementById("third-digit-input").oninput = (event) => {
 // Fourth Input Box
 document.getElementById("fourth-digit-input").onkeydown = (event) => {
     if(event.key === "Backspace") {
-        document.getElementById("third-digit-input").focus();
+        const value = document.getElementById("fourth-digit-input").value;
+
+        if(!value) {
+            document.getElementById("third-digit-input").focus();
+        } else {
+            document.getElementById("fourth-digit-input").value = ""
+        }    
     }
 }
 
@@ -135,7 +153,13 @@ document.getElementById("fourth-digit-input").oninput = (event) => {
 // Fifth Input Box
 document.getElementById("fifth-digit-input").onkeydown = (event) => {
     if(event.key === "Backspace") {
-        document.getElementById("fourth-digit-input").focus();
+        const value = document.getElementById("fifth-digit-input").value;
+
+        if(!value) {
+            document.getElementById("fourth-digit-input").focus();
+        } else {
+            document.getElementById("fifth-digit-input").value = ""
+        }
     }
 }
 
@@ -150,7 +174,13 @@ document.getElementById("fifth-digit-input").oninput = (event) => {
 // Sixth Input Box
 document.getElementById("sixth-digit-input").onkeydown = (event) => {
     if(event.key === "Backspace") {
-        document.getElementById("fifth-digit-input").focus();
+        const value = document.getElementById("sixth-digit-input").value;
+
+        if(!value) {
+            document.getElementById("fifth-digit-input").focus();
+        } else {
+            document.getElementById("sixth-digit-input").value = ""
+        }
     }
 }
 
@@ -165,7 +195,13 @@ document.getElementById("sixth-digit-input").oninput = (event) => {
 // Seventh Input Box
 document.getElementById("seventh-digit-input").onkeydown = (event) => {
     if(event.key === "Backspace") {
-        document.getElementById("sixth-digit-input").focus();
+        const value = document.getElementById("seventh-digit-input").value;
+
+        if(!value) {
+            document.getElementById("sixth-digit-input").focus();
+        } else {
+            document.getElementById("seventh-digit-input").value = ""
+        }
     }
 }
 
@@ -180,7 +216,13 @@ document.getElementById("seventh-digit-input").oninput = (event) => {
 // Eighth Input Box
 document.getElementById("eighth-digit-input").onkeydown = (event) => {
     if(event.key === "Backspace") {
-        document.getElementById("seventh-digit-input").focus();
+        const value = document.getElementById("eighth-digit-input").value;
+
+        if(!value) {
+            document.getElementById("seventh-digit-input").focus();
+        } else {
+            document.getElementById("eighth-digit-input").value = ""
+        }
     }
 }
 
@@ -195,7 +237,13 @@ document.getElementById("eighth-digit-input").oninput = (event) => {
 // Ninth Input Box
 document.getElementById("ninth-digit-input").onkeydown = (event) => {
     if(event.key === "Backspace") {
-        document.getElementById("eighth-digit-input").focus();
+        const value = document.getElementById("ninth-digit-input").value;
+
+        if(!value) {
+            document.getElementById("eighth-digit-input").focus();
+        } else {
+            document.getElementById("ninth-digit-input").value = ""
+        }
     }
 }
 
@@ -210,7 +258,13 @@ document.getElementById("ninth-digit-input").oninput = (event) => {
 // Tenth Input Box
 document.getElementById("tenth-digit-input").onkeydown = (event) => {
     if(event.key === "Backspace") {
-        document.getElementById("ninth-digit-input").focus();
+        const value = document.getElementById("tenth-digit-input").value;
+
+        if(!value) {
+            document.getElementById("ninth-digit-input").focus();
+        } else {
+            document.getElementById("tenth-digit-input").value = ""
+        }
     }
 }
 
